@@ -8,26 +8,42 @@ function calculadora(){
     function soma(){
         resultado = n1 + n2
         alert(` ${n1} + ${n2} = ${resultado} `)
+        novaOperacao();
     }
     function subtracao(){
         resultado = n1 - n2
         alert(` ${n1} - ${n2} = ${resultado} `)
+        novaOperacao();
     }
     function multiplicacao(){
         resultado = n1 * n2
         alert(` ${n1} * ${n2} = ${resultado} `)
+        novaOperacao();
     }
     function divisao(){
         resultado = n1 / n2
         alert(` ${n1} / ${n2} = ${resultado} `)
+        novaOperacao();
     }
     function divisaoInteira(){
         resultado = n1 % n2
         alert(` `)
+        novaOperacao();
     }
-    function soma(){
+    function potencializacao(){
         resultado = n1 + n2
         alert(` `)
+        novaOperacao();
+    }
+
+    function novaOperacao(){
+        let opcao = prompt('Deseja fazer outra operação?\n 1 - Sim\n 2 - Não');
+        
+        if (opcao == 1){
+            calculadora()
+        } else (opcao == 2); {
+            alert('Até mais');
+        } 
     }
 
     if (operacao == 1){
